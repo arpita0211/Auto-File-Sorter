@@ -29,9 +29,9 @@ for file_ in list_:
             if not os.path.exists(root + '/Sorted/Extra File'):
                 os.makedirs(root + '/Sorted/Extra File')  # otherwise create the directory named "Extra File"
                 shutil.move(root + '/' + file_, root + '/Sorted/Extra File/' + file_)
-                # flag = True
+                
             else:
                 if os.path.isfile(root + '/Sorted/Extra File/' + file_):
                     continue
                 shutil.move(root + '/' + file_, root + '/Sorted/Extra File/' + file_)
-                # flag = True
+                
